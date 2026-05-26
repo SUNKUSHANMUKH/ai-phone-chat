@@ -1,4 +1,4 @@
-# 📞 Real-Time AI Chat Application – AI Phone Call
+# Real-Time AI Chat Application – AI Phone Call
 
 A WebSocket-based chat where the AI speaks first, streams responses **slowly** (so you can interrupt it), detects user idle time, and supports multiple independent conversations (tabs). Built with Node.js, Socket.IO, OpenAI API, and a modern responsive frontend.
 
