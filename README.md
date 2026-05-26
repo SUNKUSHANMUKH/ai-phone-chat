@@ -2,9 +2,6 @@
 
 A WebSocket-based chat where the AI speaks first, streams responses **slowly** (so you can interrupt it), detects user idle time, and supports multiple independent conversations (tabs). Built with Node.js, Socket.IO, OpenAI API, and a modern responsive frontend.
 
-![Demo Screenshot](https://via.placeholder.com/800x400?text=AI+Phone+Call+Demo)  
-*(Add your own screenshot later)*
-
 ---
 
 ## ✨ Features
@@ -22,7 +19,7 @@ A WebSocket-based chat where the AI speaks first, streams responses **slowly** (
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer       | Technology                          |
 |-------------|-------------------------------------|
@@ -34,7 +31,7 @@ A WebSocket-based chat where the AI speaks first, streams responses **slowly** (
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ai-phone-chat/
@@ -50,7 +47,7 @@ ai-phone-chat/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -87,7 +84,7 @@ ai-phone-chat/
 
 ---
 
-## 🎮 How to Use
+## How to Use
 
 ### Starting a conversation
 - When you open the app, a new call tab is created automatically.
@@ -114,7 +111,7 @@ ai-phone-chat/
 
 ---
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
 ```
 ┌─────────────┐      WebSocket (Socket.IO)      ┌─────────────┐
@@ -142,7 +139,7 @@ ai-phone-chat/
 
 ---
 
-## 🧪 Testing Interruptions & Idle
+## Testing Interruptions & Idle
 
 ### To test interruptions:
 1. Send any message to the AI.
@@ -155,7 +152,7 @@ ai-phone-chat/
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 You can adjust these settings in `server.js`:
 
@@ -167,7 +164,7 @@ You can adjust these settings in `server.js`:
 
 ---
 
-## 📝 Possible Improvements
+## Possible Improvements
 
 - Persist conversations in a database (MongoDB, PostgreSQL).
 - Add user authentication (login with Google/GitHub).
@@ -177,7 +174,7 @@ You can adjust these settings in `server.js`:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Issue                                      | Solution |
 |--------------------------------------------|----------|
