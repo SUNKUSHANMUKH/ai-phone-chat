@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>AI Phone Call | Real‑time Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="app">
+    <!-- Top bar with tabs and dark mode -->
+    <header class="app-header">
+      <div class="logo">
+        <span class="phone-icon">📞</span>
+        <h1>AI Phone Call</h1>
+      </div>
+      <div class="header-controls">
+        <button id="newTabBtn" class="new-call-btn" title="New conversation">+ New Call</button>
+        <button id="darkModeToggle" class="dark-mode-btn" title="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <!-- Horizontal tabs (chat list) -->
+    <div class="tabs-container" id="tabsContainer">
+      <div class="tabs-scroll" id="tabsList"></div>
+    </div>
+
+    <!-- Main chat area -->
+    <main class="chat-main">
+      <div class="chat-header" id="chatHeader">
+        <div class="call-status">
+          <span class="status-dot"></span>
+          <span id="callStatusText">Connected</span>
+        </div>
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+          <span>AI is thinking</span>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="welcome-message">✨ Create a new call to start chatting with AI ✨</div>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type your response..." autocomplete="off">
+        <button id="sendBtn" class="send-button">
+          <span class="send-icon">➤</span>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast notification container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="client.js"></script>
+</body>
+</html>
